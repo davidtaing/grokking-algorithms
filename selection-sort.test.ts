@@ -1,4 +1,13 @@
 export function selectionSort(array: number[]) {
+  /**
+   * Init new empty array
+   *
+   * Nested loops
+   *  Find largest item and insert into results array
+   *
+   * Return results
+   */
+
   return array;
 }
 
