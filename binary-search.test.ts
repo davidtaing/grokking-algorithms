@@ -1,28 +1,21 @@
 function binarySearch(num: number, array: number[]): number | undefined {
-  /**
-   *  left = start index of array
-   *  right = end index of array
-   *  mid = left
-   *
-   *  while (forgot what invariant was) {
-   *    // find mid index
-   *    mid = left + (right - left) / 2  // note: need to use Math.floor since JS numbers are doubles
-   *
-   *    if array[mid] === num?
-   *      return mid index
-   *
-   *    if array[mid] < num?
-   *      move right index to mid
-   *    else // array[mid] > num
-   *      move left index to mid
-   *
-   *    move to next loop iteration
-   *  }
-   *
-   *  return false
-   **/
+  let left = 0;
+  let right = array.length - 1;
+  let mid = left;
 
-  return 0;
+  while (left <= right) {
+    mid = left + Math.floor((right - left) / 2);
+
+    if (array[mid] === num) return mid;
+
+    if (num < array[mid]) {
+      right = mid - 1;
+    } else {
+      left = mid + 1;
+    }
+  }
+
+  return undefined;
 }
 
 const testCases = [
