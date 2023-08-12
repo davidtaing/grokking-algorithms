@@ -1,3 +1,10 @@
+/**
+ * Binary Search is a O(log N) time algorithm because we reduce the amount of items
+ * by half each iteration.
+ *
+ * For an array of 4,294,967,296 items, it would take a maximum of 32 steps to find
+ * the item. Imagine if you had to go through these one by one.
+ **/
 function binarySearch(num: number, array: number[]): number | undefined {
   let left = 0;
   let right = array.length - 1;
