@@ -2,8 +2,9 @@ function binarySearch(num: number, array: number[]): number | undefined {
   /**
    *  left = start index of array
    *  right = end index of array
+   *  mid = left
    *
-   *  loop (forgot what invariant was) {
+   *  while (forgot what invariant was) {
    *    // find mid index
    *    mid = left + (right - left) / 2  // note: need to use Math.floor since JS numbers are doubles
    *
@@ -17,6 +18,8 @@ function binarySearch(num: number, array: number[]): number | undefined {
    *
    *    move to next loop iteration
    *  }
+   *
+   *  return false
    **/
 
   return 0;
