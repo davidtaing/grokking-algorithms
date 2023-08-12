@@ -5,7 +5,7 @@ function binarySearch(num: number, array: number[]): number | undefined {
    *
    *  loop (forgot what invariant was) {
    *    // find mid index
-   *    mid = right - left / 2  // note: need to use Math.floor since JS numbers are doubles
+   *    mid = left + (right - left) / 2  // note: need to use Math.floor since JS numbers are doubles
    *
    *    if array[mid] === num?
    *      return mid index
