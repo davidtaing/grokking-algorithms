@@ -1,5 +1,5 @@
 function binarySearch(num: number, array: number[]): number | undefined {
-  return undefined;
+  return 0;
 }
 
 const testCases = [
