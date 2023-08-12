@@ -27,6 +27,11 @@ function binarySearch(num: number, array: number[]): number | undefined {
 
 const testCases = [
   {
+    num: 0,
+    array: [],
+    expected: undefined,
+  },
+  {
     num: 5,
     array: [1, 2, 3],
     expected: undefined,
