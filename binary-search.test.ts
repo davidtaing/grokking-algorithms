@@ -20,6 +20,11 @@ function binarySearch(num: number, array: number[]): number | undefined {
 
 const testCases = [
   {
+    num: 5,
+    array: [1, 2, 3],
+    expected: undefined,
+  },
+  {
     num: 1,
     array: [1, 2, 3],
     expected: 0,
@@ -28,6 +33,11 @@ const testCases = [
     num: 3,
     array: [1, 2, 3],
     expected: 2,
+  },
+  {
+    num: 20,
+    array: [10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+    expected: 1,
   },
 ];
 
